@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Login complete – jaysmarti tools</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #222; background: #fff; }
+  #url { width: 100%; font-family: Consolas, monospace; font-size: 13px; padding: 8px; box-sizing: border-box; }
+  button { margin-top: 8px; padding: 8px 16px; font-size: 15px; cursor: pointer; }
+  .err { color: #b00020; }
+</style>
+</head>
+<body>
+<h1>jaysmarti tools</h1>
+<div id="msg"></div>
+<script>
+  // Runs only in the owner's browser; nothing is sent anywhere. The owner copies the address
+  // back into the local script, which exchanges the one-time code for a token.
+  var p = new URLSearchParams(location.search);
+  var msg = document.getElementById("msg");
+  if (p.get("code")) {
+    msg.innerHTML = "<p>✅ TikTok login complete. Copy this whole address and paste it into the script window:</p>" +
+      "<textarea id='url' rows='4' readonly></textarea><br><button id='copy'>Copy</button>";
+    var box = document.getElementById("url");
+    box.value = location.href;
+    box.select();
+    document.getElementById("copy").onclick = function () {
+      box.select();
+      (navigator.clipboard ? navigator.clipboard.writeText(box.value) : Promise.reject()).catch(function () {
+        document.execCommand("copy");
+      });
+      this.textContent = "Copied";
+    };
+  } else if (p.get("error")) {
+    msg.innerHTML = "<p class='err'>Login was not completed: " +
+      (p.get("error_description") || p.get("error")).replace(/</g, "&lt;") + "</p>";
+  } else {
+    msg.innerHTML = "<p>This page receives the TikTok login result for jaysmarti tools.</p>";
+  }
+</script>
+<p><a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
+</body>
+</html>
