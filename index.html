@@ -56,39 +56,39 @@
   <p class="sub">Data engineer by day, woodturner by night · Charlotte, NC</p>
 
   <div class="icons">
-    <a href="https://www.instagram.com/jaysmarti/" aria-label="Instagram">
+    <a href="https://www.instagram.com/jaysmarti/" aria-label="Instagram" data-goatcounter-click="icon-instagram">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
     </a>
-    <a href="https://www.tiktok.com/@jaysmartwoodworking" aria-label="TikTok">
+    <a href="https://www.tiktok.com/@jaysmartwoodworking" aria-label="TikTok" data-goatcounter-click="icon-tiktok">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.3v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.2a6.3 6.3 0 1 0 5.3 6.2V8.6a8 8 0 0 0 4.7 1.5V6.8a4.7 4.7 0 0 1-4.7-4.8z"/></svg>
     </a>
-    <a href="https://www.youtube.com/@jaysmartiwoodworking" aria-label="YouTube">
+    <a href="https://www.youtube.com/@jaysmartiwoodworking" aria-label="YouTube" data-goatcounter-click="icon-youtube">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15.1V8.9l5.7 3.1z"/></svg>
     </a>
-    <a href="https://www.amazon.com/shop/jaysmarti" aria-label="Amazon storefront">
+    <a href="https://www.amazon.com/shop/jaysmarti" aria-label="Amazon storefront" data-goatcounter-click="icon-amazon">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1 13H7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
     </a>
   </div>
   <span class="pill">3.2K followers on Instagram</span>
 
   <nav class="links">
-    <a class="link featured" href="https://www.amazon.com/shop/jaysmarti">
+    <a class="link featured" href="https://www.amazon.com/shop/jaysmarti" data-goatcounter-click="click-amazon" data-goatcounter-title="Amazon storefront (button)">
       <img src="img/tools.jpg" alt="">
       <span class="txt"><span class="title">🛠 Tools &amp; finishes I use</span><span class="note">My Amazon storefront</span></span>
     </a>
-    <a class="link" href="https://www.youtube.com/@jaysmartiwoodworking">
+    <a class="link" href="https://www.youtube.com/@jaysmartiwoodworking" data-goatcounter-click="click-youtube" data-goatcounter-title="YouTube (button)">
       <img src="img/youtube.jpg" alt="">
       <span class="txt"><span class="title">▶ Full videos on YouTube</span><span class="note">Firewood → fruit bowl, real-time</span></span>
     </a>
-    <a class="link" href="https://www.instagram.com/jaysmarti/">
+    <a class="link" href="https://www.instagram.com/jaysmarti/" data-goatcounter-click="click-instagram" data-goatcounter-title="Instagram (button)">
       <img src="img/vase.jpg" alt="">
       <span class="txt"><span class="title">Instagram</span><span class="note">@jaysmarti · reels</span></span>
     </a>
-    <a class="link" href="https://www.tiktok.com/@jaysmartwoodworking">
+    <a class="link" href="https://www.tiktok.com/@jaysmartwoodworking" data-goatcounter-click="click-tiktok" data-goatcounter-title="TikTok (button)">
       <img src="img/log.jpg" alt="">
       <span class="txt"><span class="title">TikTok</span><span class="note">@jaysmartwoodworking</span></span>
     </a>
-    <a class="link" href="https://www.instagram.com/direct/t/jaysmarti/">
+    <a class="link" href="https://www.instagram.com/direct/t/jaysmarti/" data-goatcounter-click="click-message" data-goatcounter-title="Message me (button)">
       <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H8l-4 4z"/></svg></span>
       <span class="txt"><span class="title">Want a piece? Message me</span><span class="note">Handmade bowls, vases &amp; boards</span></span>
     </a>
@@ -101,5 +101,13 @@
     jaysmarti tools: a personal tool that uploads my own videos to my TikTok drafts and shows my own video stats.
   </footer>
 </main>
+<script>
+  // Count the visit with its source: ?src=ig / tt / yt (bio links) shows up as the referrer in GoatCounter.
+  window.goatcounter = { referrer: function () {
+    var s = new URLSearchParams(location.search).get('src');
+    var names = { ig: 'Instagram bio', tt: 'TikTok bio', yt: 'YouTube channel' };
+    return s ? (names[s] || s) : document.referrer; } };
+</script>
+<script data-goatcounter="https://jaysmarti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
