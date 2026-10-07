@@ -5,7 +5,7 @@ Static pages for **jaysmarti tools**, a personal tool for the @jaysmarti woodtur
 
 | Page | Purpose |
 |---|---|
-| [index.html](https://jaysmarti.github.io/) | Home |
+| [index.html](https://jaysmarti.github.io/) | **Link-in-bio page** (Instagram bio link): Amazon storefront (featured), YouTube @jaysmartiwoodworking, Instagram @jaysmarti, TikTok @jaysmartwoodworking, "message me". Images in `img/` |
 | [terms.html](https://jaysmarti.github.io/terms.html) | Terms of Service (TikTok app requirement) |
 | [privacy.html](https://jaysmarti.github.io/privacy.html) | Privacy Policy (TikTok app requirement) |
 | [callback.html](https://jaysmarti.github.io/callback.html) | TikTok Login Kit redirect: shows the login result so the owner can copy it into the local tool; sends nothing anywhere |
