@@ -105,7 +105,7 @@
   // Count the visit with its source: ?src=ig / tt / yt (bio links) shows up as the referrer in GoatCounter.
   window.goatcounter = { referrer: function () {
     var s = new URLSearchParams(location.search).get('src');
-    var names = { ig: 'Instagram bio', tt: 'TikTok bio', yt: 'YouTube channel' };
+    var names = { ig: 'Instagram bio', tt: 'TikTok bio', yt: 'YouTube channel', fb: 'Facebook' };
     return s ? (names[s] || s) : document.referrer; } };
 </script>
 <script data-goatcounter="https://jaysmarti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
