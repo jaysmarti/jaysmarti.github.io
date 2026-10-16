@@ -12,3 +12,16 @@ Static pages for **jaysmarti tools**, a personal tool for the @jaysmarti woodtur
 | `tiktok8tVrVtK66hRFVOAYlJauI8Fp7HRNb5mv.txt` | TikTok URL-prefix ownership verification. **Do not delete** |
 
 Published with GitHub Pages from the `main` branch.
+
+## Parked campaign buttons (removed 2026-10-16)
+The owner removed three Amazon Creator Connections buttons "for now". The plan is to add each one back, above the
+YouTube button, once a video using that tool is live.
+
+| Button | Amazon link | GoatCounter event |
+|---|---|---|
+| 🪵 Mini block plane (Jorgensen No.101) | https://www.amazon.com/dp/B0BVZK331X?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.FZTBORP4GVA7&linkCode=tr1&tag=javlonismatov-20&linkId=amzn1.campaign.FZTBORP4GVA7_1791481245152 | click-plane |
+| 🗜 6" F-clamps (4-pack) | https://www.amazon.com/dp/B0F28MHL96?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.2K22K7EU4XZLX&linkCode=tr1&tag=javlonismatov-20&linkId=amzn1.campaign.2K22K7EU4XZLX_1791481284382 | click-clamps |
+| 🔨 Small rubber mallet (non-marring, 8 oz) | https://www.amazon.com/dp/B0H1JSZNJQ?ref=t_ac_view_request_product_image&campaignId=amzn1.campaign.2Z4UXI4YH0HGW&linkCode=tr1&tag=javlonismatov-20&linkId=amzn1.campaign.2Z4UXI4YH0HGW_1791488593889 | click-mallet |
+
+The full button HTML, with icons, is in commits 4d05e8e, cd14e5e and 913d73a. Restore one with
+`git show 913d73a -- index.html`. Each button's note must keep the "#ad paid link" label.
