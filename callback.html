@@ -21,7 +21,7 @@
   var p = new URLSearchParams(location.search);
   var msg = document.getElementById("msg");
   if (p.get("code")) {
-    msg.innerHTML = "<p>✅ TikTok login complete. Copy this whole address and paste it into the script window:</p>" +
+    msg.innerHTML = "<p>✅ Login complete. Copy this whole address and paste it into the script window:</p>" +
       "<textarea id='url' rows='4' readonly></textarea><br><button id='copy'>Copy</button>";
     var box = document.getElementById("url");
     box.value = location.href;
@@ -37,7 +37,7 @@
     msg.innerHTML = "<p class='err'>Login was not completed: " +
       (p.get("error_description") || p.get("error")).replace(/</g, "&lt;") + "</p>";
   } else {
-    msg.innerHTML = "<p>This page receives the TikTok login result for jaysmarti tools.</p>";
+    msg.innerHTML = "<p>This page receives the login result (TikTok, LinkedIn) for jaysmarti tools.</p>";
   }
 </script>
 <p><a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
